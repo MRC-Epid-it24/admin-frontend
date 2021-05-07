@@ -30,7 +30,7 @@
     "pug": "^2.0.4",
     "textangular": "^1.5.16",
     "ui-select": "^0.19.8",
-    "underscore": "^1.11.0",
+    "underscore": "^1.12.1",
     "uuid": "^7.0.3"
   },
   "devDependencies": {
