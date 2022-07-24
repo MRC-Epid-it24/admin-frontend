@@ -5,1904 +5,2321 @@ var _ = require('underscore');
 module.exports = function () {
     var l = [
         {
-            id: 'one_inch_pieces',
-            name: 'inch pieces'
+            id: 'serves_of_10_mLs',
+            name: 'serves of 10 mLs'
         },
-
         {
-            id: 'six_inch_sub_rolls',
-            name: '6 inch sub rolls'
+            id: 'serves_of_100_mLs',
+            name: 'serves of 100 mLs'
         },
-
         {
-            id: 'twelve_inch_sub_rolls',
-            name: '12 inch sub rolls'
+            id: 'serves_of_500_mLs',
+            name: 'serves of 500 mLs'
         },
-
         {
-            id: 'anchovies',
-            name: 'anchovies'
+            id: 'ants',
+            name: 'ants'
         },
-
+        {
+            id: 'apples',
+            name: 'apples'
+        },
         {
             id: 'apricots',
             name: 'apricots'
         },
-
         {
-            id: 'artichoke_hearts',
-            name: 'artichoke hearts'
+            id: 'artichokes',
+            name: 'artichokes'
         },
-
         {
-            id: 'aubergine',
-            name: 'aubergine'
+            id: 'avocadoes',
+            name: 'avocadoes'
         },
-
         {
-            id: 'average_size_bags',
-            name: 'average size bags'
+            id: 'babacos',
+            name: 'babacos'
         },
-
         {
-            id: 'average_sized_dim_sum',
-            name: 'average sized dim sum'
+            id: 'baby_beetroots',
+            name: 'baby beetroots'
         },
-
         {
-            id: 'average_sized_flapjacks',
-            name: 'average sized flapjacks'
+            id: 'baby_carrots',
+            name: 'baby carrots'
         },
-
         {
-            id: 'average_spring_rolls',
-            name: 'average spring rolls'
+            id: 'baby_corns',
+            name: 'baby corns'
         },
-
         {
-            id: 'average_tubs___bags',
-            name: 'average tubs / bags'
+            id: 'baby_leaves',
+            name: 'baby leaves'
         },
-
         {
-            id: 'bacon_and_cheese_grills',
-            name: 'bacon and cheese grills'
+            id: 'baby_octopuses',
+            name: 'baby octopuses'
         },
-
+        {
+            id: 'babybels',
+            name: 'babybels'
+        },
         {
             id: 'bagels',
             name: 'bagels'
         },
-
         {
-            id: 'bags',
-            name: 'bags'
+            id: 'baguettes',
+            name: 'baguettes'
         },
-
         {
             id: 'balls',
             name: 'balls'
         },
-
+        {
+            id: 'Balmain_bay_bugs',
+            name: 'Balmain bay bugs'
+        },
+        {
+            id: 'bamboo_shoots',
+            name: 'bamboo shoots'
+        },
+        {
+            id: 'banana_chips',
+            name: 'banana chips'
+        },
+        {
+            id: 'banana_splits',
+            name: 'banana splits'
+        },
+        {
+            id: 'bananas',
+            name: 'bananas'
+        },
+        {
+            id: 'baos',
+            name: 'baos'
+        },
         {
             id: 'bars',
             name: 'bars'
         },
-
         {
-            id: 'batons',
-            name: 'batons'
+            id: 'beans',
+            name: 'beans'
         },
-
         {
-            id: 'beetroot',
-            name: 'beetroot'
+            id: 'beetroots',
+            name: 'beetroots'
         },
-
         {
             id: 'berries',
             name: 'berries'
         },
-
         {
             id: 'biscuits',
             name: 'biscuits'
         },
-
         {
-            id: 'bites',
-            name: 'bites'
+            id: 'bite_size_pieces',
+            name: 'bite size pieces'
         },
-
         {
-            id: 'blocks',
-            name: 'blocks'
+            id: 'bottles',
+            name: 'bottles'
         },
-
+        {
+            id: 'boxes',
+            name: 'boxes'
+        },
+        {
+            id: 'brains',
+            name: 'brains'
+        },
+        {
+            id: 'breasts',
+            name: 'breasts'
+        },
+        {
+            id: 'brussel_sprouts',
+            name: 'brussel sprouts'
+        },
+        {
+            id: 'buckets',
+            name: 'buckets'
+        },
+        {
+            id: 'bullets',
+            name: 'bullets'
+        },
         {
             id: 'bunches',
             name: 'bunches'
         },
-
         {
             id: 'buns',
             name: 'buns'
         },
-
+        {
+            id: 'buns_or_scrolls',
+            name: 'buns or scrolls'
+        },
         {
             id: 'burgers',
             name: 'burgers'
         },
-
         {
-            id: 'burritos',
-            name: 'burritos'
+            id: 'cabbages',
+            name: 'cabbages'
         },
-
-        {
-            id: 'buttons',
-            name: 'buttons'
-        },
-
         {
             id: 'cakes',
             name: 'cakes'
         },
-
+        {
+            id: 'calamari_rings',
+            name: 'calamari rings'
+        },
         {
             id: 'cannelloni_tubes',
             name: 'cannelloni tubes'
         },
-
+        {
+            id: 'cannolis',
+            name: 'cannolis'
+        },
+        {
+            id: 'capers',
+            name: 'capers'
+        },
+        {
+            id: 'capsicums',
+            name: 'capsicums'
+        },
+        {
+            id: 'carpaccio_slices',
+            name: 'carpaccio slices'
+        },
+        {
+            id: 'carrots',
+            name: 'carrots'
+        },
         {
             id: 'cartons',
             name: 'cartons'
         },
-
         {
             id: 'cassavas',
             name: 'cassavas'
         },
-
+        {
+            id: 'celeriacs',
+            name: 'celeriacs'
+        },
+        {
+            id: 'cevaps',
+            name: 'cevaps'
+        },
+        {
+            id: 'chapattis',
+            name: 'chapattis'
+        },
+        {
+            id: 'cheese_fruits',
+            name: 'cheese fruits'
+        },
         {
             id: 'cherries',
             name: 'cherries'
         },
-
-        {
-            id: 'chestnuts',
-            name: 'chestnuts'
-        },
-
-        {
-            id: 'chicken_livers',
-            name: 'chicken livers'
-        },
-
         {
             id: 'chillies',
             name: 'chillies'
         },
-
         {
-            id: 'chocolate_oranges',
-            name: 'chocolate oranges'
+            id: 'chips',
+            name: 'chips'
         },
-
+        {
+            id: 'choc_tops',
+            name: 'choc tops'
+        },
         {
             id: 'chocolates',
             name: 'chocolates'
         },
-
+        {
+            id: 'chokos',
+            name: 'chokos'
+        },
+        {
+            id: 'churros',
+            name: 'churros'
+        },
         {
             id: 'cloves',
             name: 'cloves'
         },
-
+        {
+            id: 'cobbettes',
+            name: 'cobbettes'
+        },
+        {
+            id: 'cobs',
+            name: 'cobs'
+        },
+        {
+            id: 'cocktail_frankfurts',
+            name: 'cocktail frankfurts'
+        },
         {
             id: 'cocktail_sausages',
             name: 'cocktail sausages'
         },
-
+        {
+            id: 'coconuts',
+            name: 'coconuts'
+        },
+        {
+            id: 'cones',
+            name: 'cones'
+        },
+        {
+            id: 'crab_claws',
+            name: 'crab claws'
+        },
+        {
+            id: 'crabs',
+            name: 'crabs'
+        },
         {
             id: 'crackers',
             name: 'crackers'
         },
-
         {
-            id: 'crepes',
-            name: 'crepes'
+            id: 'crackles',
+            name: 'crackles'
         },
-
         {
-            id: 'crumpets',
-            name: 'crumpets'
+            id: 'croissants',
+            name: 'croissants'
         },
-
+        {
+            id: 'cronuts',
+            name: 'cronuts'
+        },
+        {
+            id: 'croquettes',
+            name: 'croquettes'
+        },
+        {
+            id: 'croutons',
+            name: 'croutons'
+        },
         {
             id: 'cubes',
             name: 'cubes'
         },
-
+        {
+            id: 'cucumbers',
+            name: 'cucumbers'
+        },
+        {
+            id: 'cumquats',
+            name: 'cumquats'
+        },
+        {
+            id: 'cupcakes',
+            name: 'cupcakes'
+        },
         {
             id: 'cups',
             name: 'cups'
         },
-
+        {
+            id: 'cups_or_sachets',
+            name: 'cups or sachets'
+        },
+        {
+            id: 'currants',
+            name: 'currants'
+        },
+        {
+            id: 'curry_puffs',
+            name: 'curry puffs'
+        },
+        {
+            id: 'custard_fruits',
+            name: 'custard fruits'
+        },
+        {
+            id: 'cutlets',
+            name: 'cutlets'
+        },
+        {
+            id: 'danishes',
+            name: 'danishes'
+        },
         {
             id: 'dates',
             name: 'dates'
         },
-
         {
-            id: 'dessert_spoons',
-            name: 'dessert spoons'
+            id: 'diced_pieces',
+            name: 'diced pieces'
         },
-
         {
-            id: 'double_measures',
-            name: 'double measures'
+            id: 'dim_sims',
+            name: 'dim sims'
         },
-
         {
-            id: 'dough_balls',
-            name: 'dough balls'
+            id: 'dixie_cups',
+            name: 'dixie cups'
         },
-
+        {
+            id: 'dolmades',
+            name: 'dolmades'
+        },
+        {
+            id: 'double_patty_burgers',
+            name: 'double patty burgers'
+        },
+        {
+            id: 'double_shot_espresso_cups',
+            name: 'double shot espresso cups'
+        },
+        {
+            id: 'doughnuts',
+            name: 'doughnuts'
+        },
+        {
+            id: 'dragon_fruit',
+            name: 'dragon fruit'
+        },
+        {
+            id: 'drops',
+            name: 'drops'
+        },
         {
             id: 'drumsticks',
             name: 'drumsticks'
         },
-
         {
             id: 'dumplings',
             name: 'dumplings'
         },
-
+        {
+            id: 'durians',
+            name: 'durians'
+        },
+        {
+            id: 'eclairs',
+            name: 'eclairs'
+        },
+        {
+            id: 'eggplants',
+            name: 'eggplants'
+        },
         {
             id: 'eggs',
             name: 'eggs'
         },
-
         {
-            id: 'enchiladas',
-            name: 'enchiladas'
+            id: 'eggs_benedict',
+            name: 'eggs benedict'
         },
-
         {
-            id: 'extra_large_bars',
-            name: 'extra large bars'
+            id: 'espresso_cups',
+            name: 'espresso cups'
         },
-
         {
-            id: 'extra_large_biscuits',
-            name: 'extra large biscuits'
+            id: 'extra_large_carrots',
+            name: 'extra large carrots'
         },
-
         {
-            id: 'extra_large_eggs',
-            name: 'extra large eggs'
+            id: 'extra_large_pears',
+            name: 'extra large pears'
         },
-
         {
-            id: 'extra_large_triangles',
-            name: 'extra large triangles'
+            id: 'extra_large_giant_mushrooms',
+            name: 'extra large/giant mushrooms'
         },
-
-        {
-            id: 'fajitas',
-            name: 'fajitas'
-        },
-
         {
             id: 'falafels',
             name: 'falafels'
         },
-
         {
-            id: 'fatty_cutties',
-            name: 'fatty cutties'
+            id: 'family_pies',
+            name: 'family pies'
         },
-
+        {
+            id: 'family_size_bags',
+            name: 'family size bags'
+        },
+        {
+            id: 'family_size_microwavable_bags',
+            name: 'family size microwavable bags'
+        },
+        {
+            id: 'family_size_packets',
+            name: 'family size packets'
+        },
+        {
+            id: 'family_size_pavlovas',
+            name: 'family size pavlovas'
+        },
+        {
+            id: 'feijoas',
+            name: 'feijoas'
+        },
+        {
+            id: 'fennels',
+            name: 'fennels'
+        },
+        {
+            id: 'figs',
+            name: 'figs'
+        },
         {
             id: 'fillets',
             name: 'fillets'
         },
-
+        {
+            id: 'fillets_or_steaks',
+            name: 'fillets or steaks'
+        },
         {
             id: 'fingers',
             name: 'fingers'
         },
-
         {
-            id: 'fishes',
-            name: 'fishes'
+            id: 'fish',
+            name: 'fish'
         },
-
+        {
+            id: 'fish_fingers',
+            name: 'fish fingers'
+        },
+        {
+            id: 'flatbreads',
+            name: 'flatbreads'
+        },
+        {
+            id: 'frankfurts',
+            name: 'frankfurts'
+        },
+        {
+            id: 'freckles',
+            name: 'freckles'
+        },
+        {
+            id: 'friands',
+            name: 'friands'
+        },
         {
             id: 'fritters',
             name: 'fritters'
         },
-
         {
             id: 'fruits',
             name: 'fruits'
         },
-
         {
-            id: 'giant_buttons',
-            name: 'giant buttons'
+            id: 'gems',
+            name: 'gems'
         },
-
         {
-            id: 'giant_crumpets',
-            name: 'giant crumpets'
+            id: 'gherkins',
+            name: 'gherkins'
         },
-
         {
-            id: 'goujons',
-            name: 'goujons'
+            id: 'giblets',
+            name: 'giblets'
         },
-
         {
             id: 'grapes',
             name: 'grapes'
         },
-
+        {
+            id: 'grubs',
+            name: 'grubs'
+        },
+        {
+            id: 'guavas',
+            name: 'guavas'
+        },
+        {
+            id: 'half_size_baguettes',
+            name: 'half-size baguettes'
+        },
+        {
+            id: 'halves',
+            name: 'halves'
+        },
+        {
+            id: 'hamburger_rolls',
+            name: 'hamburger rolls'
+        },
         {
             id: 'handfuls',
             name: 'handfuls'
         },
-
         {
-            id: 'half_pints',
-            name: 'half pints'
+            id: 'hash_browns',
+            name: 'hash browns'
         },
-
         {
-            id: 'heaped_tablespoons',
-            name: 'heaped tablespoons'
+            id: 'hearts',
+            name: 'hearts'
         },
-
         {
-            id: 'heaped_teaspoons',
-            name: 'heaped teaspoons'
+            id: 'honey_joys',
+            name: 'honey joys'
         },
-
         {
-            id: 'hoppers',
-            name: 'hoppers'
+            id: 'hot_cross_buns',
+            name: 'hot cross buns'
         },
-
         {
-            id: 'hot_pots',
-            name: 'hot pots'
+            id: 'hot_dogs',
+            name: 'hot dogs'
         },
-
         {
-            id: 'ice_cream_sandwiches',
-            name: 'ice cream sandwiches'
+            id: 'ice_creams',
+            name: 'ice creams'
         },
-
         {
-            id: 'individual_packs',
-            name: 'individual packs'
+            id: 'individual_cakes',
+            name: 'individual cakes'
         },
-
+        {
+            id: 'individual_pasties',
+            name: 'individual pasties'
+        },
+        {
+            id: 'individual_pavlovas',
+            name: 'individual pavlovas'
+        },
         {
             id: 'individual_pies',
             name: 'individual pies'
         },
-
         {
-            id: 'individual_pots',
-            name: 'individual pots'
+            id: 'individual_quiches',
+            name: 'individual quiches'
         },
-
         {
-            id: 'individual_slices',
-            name: 'individual slices'
+            id: 'individual_sausage_rolls',
+            name: 'individual sausage rolls'
         },
-
+        {
+            id: 'individual_strudels',
+            name: 'individual strudels'
+        },
         {
             id: 'individual_tarts',
             name: 'individual tarts'
         },
-
+        {
+            id: 'insects',
+            name: 'insects'
+        },
+        {
+            id: 'jackfruits',
+            name: 'jackfruits'
+        },
+        {
+            id: 'jaffas',
+            name: 'jaffas'
+        },
         {
             id: 'jars',
             name: 'jars'
         },
-
+        {
+            id: 'jars_or_pouches',
+            name: 'jars or pouches'
+        },
+        {
+            id: 'jatz_cracker_size_slices',
+            name: 'jatz cracker-size slices'
+        },
+        {
+            id: 'jumbo_takeaway_serves',
+            name: 'jumbo takeaway serves'
+        },
+        {
+            id: 'junior_burgers',
+            name: 'junior burgers'
+        },
         {
             id: 'kebabs',
             name: 'kebabs'
         },
-
         {
-            id: 'kingsize_pots',
-            name: 'kingsize pots'
+            id: 'kernels',
+            name: 'kernels'
         },
-
         {
-            id: 'large_aubergines',
-            name: 'large aubergines'
+            id: 'kidneys',
+            name: 'kidneys'
         },
-
         {
-            id: 'large_avocados',
-            name: 'large avocados'
+            id: 'kievs',
+            name: 'kievs'
         },
-
         {
-            id: 'large_bags',
-            name: 'large bags'
+            id: 'king_prawns',
+            name: 'king prawns'
         },
-
         {
-            id: 'large_bananas',
-            name: 'large bananas'
+            id: 'kiwifruit',
+            name: 'kiwifruit'
         },
-
         {
-            id: 'large_bars',
-            name: 'large bars'
+            id: 'lamingtons',
+            name: 'lamingtons'
         },
-
+        {
+            id: 'large_avocadoes',
+            name: 'large avocadoes'
+        },
+        {
+            id: 'large_balls',
+            name: 'large balls'
+        },
+        {
+            id: 'large_beetroots',
+            name: 'large beetroots'
+        },
+        {
+            id: 'large_berries',
+            name: 'large berries'
+        },
         {
             id: 'large_biscuits',
             name: 'large biscuits'
         },
-
         {
-            id: 'large_bottles',
-            name: 'large bottles'
+            id: 'large_bunnies_or_bilbies',
+            name: 'large bunnies or bilbies'
         },
-
         {
-            id: 'large_bowls',
-            name: 'large bowls'
+            id: 'large_buns',
+            name: 'large buns'
         },
-
         {
-            id: 'large_burgers',
-            name: 'large burgers'
+            id: 'large_capsicums',
+            name: 'large capsicums'
         },
-
-        {
-            id: 'large_cakes',
-            name: 'large cakes'
-        },
-
         {
             id: 'large_carrots',
             name: 'large carrots'
         },
-
         {
             id: 'large_cartons',
             name: 'large cartons'
         },
-
+        {
+            id: 'large_chickens',
+            name: 'large chickens'
+        },
         {
             id: 'large_chops',
             name: 'large chops'
         },
-
         {
-            id: 'large_cobs',
-            name: 'large cobs'
+            id: 'large_cones',
+            name: 'large cones'
         },
-
         {
-            id: 'large_coconut_spoons',
-            name: 'large coconut spoons'
+            id: 'large_cucumbers',
+            name: 'large cucumbers'
         },
-
         {
-            id: 'large_crackers',
-            name: 'large crackers'
+            id: 'large_cups_or_sachets',
+            name: 'large cups or sachets'
         },
-
         {
-            id: 'large_eggs',
-            name: 'large eggs'
+            id: 'large_cutlets',
+            name: 'large cutlets'
         },
-
+        {
+            id: 'large_drumsticks',
+            name: 'large drumsticks'
+        },
+        {
+            id: 'large_dumplings',
+            name: 'large dumplings'
+        },
+        {
+            id: 'large_easter_eggs',
+            name: 'large easter eggs'
+        },
+        {
+            id: 'large_eggplants',
+            name: 'large eggplants'
+        },
+        {
+            id: 'large_feet',
+            name: 'large feet'
+        },
         {
             id: 'large_fillets',
             name: 'large fillets'
         },
-
         {
-            id: 'large_fingers',
-            name: 'large fingers'
+            id: 'large_fillets_or_steaks',
+            name: 'large fillets or steaks'
         },
-
-        {
-            id: 'large_flapjacks',
-            name: 'large flapjacks'
-        },
-
         {
             id: 'large_flatbreads',
             name: 'large flatbreads'
         },
-
         {
-            id: 'large_fruits',
-            name: 'large fruits'
+            id: 'large_grapefruits',
+            name: 'large grapefruits'
         },
-
         {
-            id: 'large_gherkins',
-            name: 'large gherkins'
+            id: 'large_leaves',
+            name: 'large leaves'
         },
-
         {
-            id: 'large_handfuls',
-            name: 'large handfuls'
+            id: 'large_leeks',
+            name: 'large leeks'
         },
-
         {
-            id: 'large_hot_dogs',
-            name: 'large hot dogs'
+            id: 'large_lettuces',
+            name: 'large lettuces'
         },
-
         {
-            id: 'large_jars',
-            name: 'large jars'
+            id: 'large_lollipops',
+            name: 'large lollipops'
         },
-
         {
-            id: 'large_kebabs',
-            name: 'large kebabs'
+            id: 'large_mangos',
+            name: 'large mangos'
         },
-
         {
-            id: 'large_kiwis',
-            name: 'large kiwis'
+            id: 'large_marshmallows',
+            name: 'large marshmallows'
         },
-
+        {
+            id: 'large_muffins',
+            name: 'large muffins'
+        },
         {
             id: 'large_mushrooms',
             name: 'large mushrooms'
         },
-
         {
-            id: 'large_naan_breads',
-            name: 'large naan breads'
+            id: 'large_octopuses',
+            name: 'large octopuses'
         },
-
-        {
-            id: 'large_omelettes_4_eggs',
-            name: 'large omelettes (4 eggs)'
-        },
-
         {
             id: 'large_onions',
             name: 'large onions'
         },
-
         {
-            id: 'large_pancakes',
-            name: 'large pancakes'
+            id: 'large_pappadams',
+            name: 'large pappadams'
         },
-
         {
-            id: 'large_parsnips',
-            name: 'large parsnips'
+            id: 'large_patties_or_cakes',
+            name: 'large patties or cakes'
         },
-
         {
-            id: 'large_pastries',
-            name: 'large pastries'
+            id: 'large_pears',
+            name: 'large pears'
         },
-
         {
             id: 'large_pieces',
             name: 'large pieces'
         },
-
         {
-            id: 'large_pies',
-            name: 'large pies'
+            id: 'large_pineapples',
+            name: 'large pineapples'
         },
-
         {
-            id: 'large_plantains',
-            name: 'large plantains'
+            id: 'large_potatoes',
+            name: 'large potatoes'
         },
-
-        {
-            id: 'large_portions',
-            name: 'large portions'
-        },
-
-        {
-            id: 'large_pots',
-            name: 'large pots'
-        },
-
         {
             id: 'large_pouches',
             name: 'large pouches'
         },
-
+        {
+            id: 'large_quiches',
+            name: 'large quiches'
+        },
+        {
+            id: 'large_rectangles',
+            name: 'large rectangles'
+        },
         {
             id: 'large_rolls',
             name: 'large rolls'
         },
-
         {
-            id: 'large_scones',
-            name: 'large scones'
+            id: 'large_shanks',
+            name: 'large shanks'
         },
-
         {
-            id: 'large_share_bags',
-            name: 'large share bags'
+            id: 'large_single_serve_packets',
+            name: 'large single serve packets'
         },
-
         {
-            id: 'large_skewers',
-            name: 'large skewers'
+            id: 'large_single_serve_pouches_or_tubs',
+            name: 'large single serve pouches or tubs'
         },
-
         {
-            id: 'large_slices',
-            name: 'large slices'
+            id: 'large_single_serve_tubs',
+            name: 'large single serve tubs'
         },
-
         {
-            id: 'large_spring_rolls',
-            name: 'large spring rolls'
+            id: 'large_stalks',
+            name: 'large stalks'
         },
-
         {
-            id: 'large_squares',
-            name: 'large squares'
+            id: 'large_sticks',
+            name: 'large sticks'
         },
-
         {
-            id: 'large_steaks',
-            name: 'large steaks'
+            id: 'large_sundaes',
+            name: 'large sundaes'
         },
-
         {
-            id: 'large_tarts',
-            name: 'large tarts'
+            id: 'large_sweet_potatoes',
+            name: 'large sweet potatoes'
         },
-
         {
-            id: 'large_truffles',
-            name: 'large truffles'
+            id: 'large_takeaway_serves',
+            name: 'large takeaway serves'
         },
-
         {
-            id: 'large_tubs',
-            name: 'large tubs'
+            id: 'large_thighs',
+            name: 'large thighs'
         },
-
+        {
+            id: 'large_yams',
+            name: 'large yams'
+        },
+        {
+            id: 'large_zucchinis',
+            name: 'large zucchinis'
+        },
+        {
+            id: 'large_extra_large_peaches',
+            name: 'large/extra large peaches'
+        },
         {
             id: 'leaves',
             name: 'leaves'
         },
-
+        {
+            id: 'lebanese_eggplants',
+            name: 'lebanese eggplants'
+        },
         {
             id: 'leeks',
             name: 'leeks'
         },
-
         {
             id: 'legs',
             name: 'legs'
         },
-
         {
-            id: 'level_tablespoons',
-            name: 'level tablespoons'
+            id: 'lemons',
+            name: 'lemons'
         },
-
         {
-            id: 'level_teaspoons',
-            name: 'level teaspoons'
+            id: 'lettuces',
+            name: 'lettuces'
         },
-
+        {
+            id: 'limes',
+            name: 'limes'
+        },
+        {
+            id: 'lobsters_or_crayfish',
+            name: 'lobsters or crayfish'
+        },
+        {
+            id: 'lollies',
+            name: 'lollies'
+        },
         {
             id: 'lollipops',
             name: 'lollipops'
         },
-
         {
-            id: 'macaroons',
-            name: 'macaroons'
+            id: 'long_slices',
+            name: 'long slices'
         },
-
         {
-            id: 'mange_tout',
-            name: 'mange tout'
+            id: 'loquats',
+            name: 'loquats'
         },
-
+        {
+            id: 'lychees',
+            name: 'lychees'
+        },
+        {
+            id: 'm_ms',
+            name: 'm&ms'
+        },
+        {
+            id: 'maltesers',
+            name: 'maltesers'
+        },
         {
             id: 'marshmallows',
             name: 'marshmallows'
         },
-
+        {
+            id: 'McDonalds_single_serve_packets',
+            name: 'McDonalds single serve packets'
+        },
+        {
+            id: 'McFlurries',
+            name: 'McFlurries'
+        },
         {
             id: 'meatballs',
             name: 'meatballs'
         },
-
         {
-            id: 'medium_aubergines',
-            name: 'medium aubergines'
+            id: 'medium_avocadoes',
+            name: 'medium avocadoes'
         },
-
         {
-            id: 'medium_avocados',
-            name: 'medium avocados'
+            id: 'medium_berries',
+            name: 'medium berries'
         },
-
         {
-            id: 'medium_bags',
-            name: 'medium bags'
+            id: 'medium_bunnies_or_bilbies',
+            name: 'medium bunnies or bilbies'
         },
-
         {
-            id: 'medium_bananas',
-            name: 'medium bananas'
+            id: 'medium_capsicums',
+            name: 'medium capsicums'
         },
-
-        {
-            id: 'medium_bars',
-            name: 'medium bars'
-        },
-
-        {
-            id: 'medium_beetroot',
-            name: 'medium beetroot'
-        },
-
-        {
-            id: 'medium_biscuits',
-            name: 'medium biscuits'
-        },
-
-        {
-            id: 'medium_bowls',
-            name: 'medium bowls'
-        },
-
         {
             id: 'medium_carrots',
             name: 'medium carrots'
         },
-
         {
-            id: 'medium_cartons',
-            name: 'medium cartons'
+            id: 'medium_chickens',
+            name: 'medium chickens'
         },
-
         {
             id: 'medium_chops',
             name: 'medium chops'
         },
-
         {
-            id: 'medium_coconut_spoons',
-            name: 'medium coconut spoons'
+            id: 'medium_cucumbers',
+            name: 'medium cucumbers'
         },
-
         {
-            id: 'medium_courgettes',
-            name: 'medium courgettes'
+            id: 'medium_cutlets',
+            name: 'medium cutlets'
         },
-
         {
-            id: 'medium_eggs',
-            name: 'medium eggs'
+            id: 'medium_drumsticks',
+            name: 'medium drumsticks'
         },
-
         {
-            id: 'medium_fillet_steaks',
-            name: 'medium fillet steaks'
+            id: 'medium_dumplings',
+            name: 'medium dumplings'
         },
-
+        {
+            id: 'medium_easter_eggs',
+            name: 'medium easter eggs'
+        },
+        {
+            id: 'medium_eggplants',
+            name: 'medium eggplants'
+        },
         {
             id: 'medium_fillets',
             name: 'medium fillets'
         },
-
         {
-            id: 'medium_flatbreads',
-            name: 'medium flatbreads'
+            id: 'medium_fillets_or_steaks',
+            name: 'medium fillets or steaks'
         },
-
         {
-            id: 'medium_fruits',
-            name: 'medium fruits'
+            id: 'medium_grapefruits',
+            name: 'medium grapefruits'
         },
-
         {
-            id: 'medium_gherkins',
-            name: 'medium gherkins'
+            id: 'medium_leaves',
+            name: 'medium leaves'
         },
-
         {
-            id: 'medium_handfuls',
-            name: 'medium handfuls'
+            id: 'medium_leeks',
+            name: 'medium leeks'
         },
-
         {
-            id: 'medium_hot_dogs',
-            name: 'medium hot dogs'
+            id: 'medium_lettuces',
+            name: 'medium lettuces'
         },
-
         {
-            id: 'medium_jars',
-            name: 'medium jars'
+            id: 'medium_mangos',
+            name: 'medium mangos'
         },
-
         {
-            id: 'medium_kiwis',
-            name: 'medium kiwis'
+            id: 'medium_mushrooms',
+            name: 'medium mushrooms'
         },
-
         {
-            id: 'medium_naans',
-            name: 'medium naans'
+            id: 'medium_octopuses',
+            name: 'medium octopuses'
         },
-
-        {
-            id: 'medium_omelettes_2_eggs',
-            name: 'medium omelettes (2 eggs)'
-        },
-
         {
             id: 'medium_onions',
             name: 'medium onions'
         },
-
         {
-            id: 'medium_parsnips',
-            name: 'medium parsnips'
+            id: 'medium_pears',
+            name: 'medium pears'
         },
-
         {
             id: 'medium_pieces',
             name: 'medium pieces'
         },
-
         {
-            id: 'medium_plantains',
-            name: 'medium plantains'
+            id: 'medium_potatoes',
+            name: 'medium potatoes'
         },
-
         {
-            id: 'medium_portions',
-            name: 'medium portions'
+            id: 'medium_shanks',
+            name: 'medium shanks'
         },
-
         {
-            id: 'medium_pots',
-            name: 'medium pots'
+            id: 'medium_sweet_potatoes',
+            name: 'medium sweet potatoes'
         },
-
         {
-            id: 'medium_pouches',
-            name: 'medium pouches'
+            id: 'medium_takeaway_serves',
+            name: 'medium takeaway serves'
         },
-
         {
-            id: 'medium_rolls',
-            name: 'medium rolls'
+            id: 'medium_thighs',
+            name: 'medium thighs'
         },
-
         {
-            id: 'medium_scones',
-            name: 'medium scones'
+            id: 'medium_yams',
+            name: 'medium yams'
         },
-
         {
-            id: 'medium_slices',
-            name: 'medium slices'
+            id: 'medium_zucchinis',
+            name: 'medium zucchinis'
         },
-
         {
-            id: 'medium_steaks',
-            name: 'medium steaks'
+            id: 'medium_large_pears',
+            name: 'medium/large pears'
         },
-
         {
-            id: 'medium_sundaes',
-            name: 'medium sundaes'
+            id: 'medium_large_pieces',
+            name: 'medium/large pieces'
         },
-
         {
-            id: 'medium_tubs',
-            name: 'medium tubs'
+            id: 'medium_large_prawns',
+            name: 'medium/large prawns'
         },
-
+        {
+            id: 'medium_large_swedes',
+            name: 'medium/large swedes'
+        },
+        {
+            id: 'medium_large_wings',
+            name: 'medium/large wings'
+        },
+        {
+            id: 'melons',
+            name: 'melons'
+        },
         {
             id: 'meringues',
             name: 'meringues'
         },
-
         {
-            id: 'milles_feuilles',
-            name: 'milles feuilles'
+            id: 'microwavable_bags',
+            name: 'microwavable bags'
         },
-
         {
-            id: 'mini_Oreos',
-            name: 'mini Oreos'
+            id: 'microwavable_cups',
+            name: 'microwavable cups'
         },
-
         {
-            id: 'mini_baby_peppers',
-            name: 'Mini/baby peppers'
+            id: 'mini_babybels',
+            name: 'mini babybels'
         },
-
+        {
+            id: 'mini_bagels',
+            name: 'mini bagels'
+        },
         {
             id: 'mini_bars',
             name: 'mini bars'
         },
-
         {
-            id: 'mini_boxes',
-            name: 'mini boxes'
+            id: 'mini_biscuits',
+            name: 'mini biscuits'
         },
-
+        {
+            id: 'mini_bunnies_or_bilbies',
+            name: 'mini bunnies or bilbies'
+        },
+        {
+            id: 'mini_buns',
+            name: 'mini buns'
+        },
+        {
+            id: 'mini_cakes',
+            name: 'mini cakes'
+        },
         {
             id: 'mini_churros',
             name: 'mini churros'
         },
-
         {
-            id: 'mini_cobs',
-            name: 'mini cobs'
+            id: 'mini_corn_cakes',
+            name: 'mini corn cakes'
         },
-
         {
-            id: 'mini_eclairs',
-            name: 'mini eclairs'
+            id: 'mini_croissants',
+            name: 'mini croissants'
         },
-
         {
-            id: 'mini_eggs',
-            name: 'mini eggs'
+            id: 'mini_cronuts',
+            name: 'mini cronuts'
         },
-
         {
-            id: 'mini_fillets',
-            name: 'mini fillets'
+            id: 'mini_cupcakes',
+            name: 'mini cupcakes'
         },
-
         {
-            id: 'mini_flapjacks',
-            name: 'mini flapjacks'
+            id: 'mini_curry_puffs',
+            name: 'mini curry puffs'
         },
-
         {
-            id: 'mini_macaroons',
-            name: 'mini macaroons'
+            id: 'mini_danishes',
+            name: 'mini danishes'
         },
-
         {
-            id: 'mini_marshmallows',
-            name: 'mini marshmallows'
+            id: 'mini_doughnuts',
+            name: 'mini doughnuts'
         },
-
         {
-            id: 'mini_mozzarella_balls',
-            name: 'mini mozzarella balls'
+            id: 'mini_easter_eggs',
+            name: 'mini easter eggs'
         },
-
+        {
+            id: 'mini_friands',
+            name: 'mini friands'
+        },
+        {
+            id: 'mini_hot_dogs',
+            name: 'mini hot dogs'
+        },
+        {
+            id: 'mini_ice_creams',
+            name: 'mini ice creams'
+        },
+        {
+            id: 'mini_kebabs',
+            name: 'mini kebabs'
+        },
+        {
+            id: 'mini_loaves',
+            name: 'mini loaves'
+        },
+        {
+            id: 'mini_muffins',
+            name: 'mini muffins'
+        },
+        {
+            id: 'mini_pancakes',
+            name: 'mini pancakes'
+        },
+        {
+            id: 'mini_pasties',
+            name: 'mini pasties'
+        },
         {
             id: 'mini_pastries',
             name: 'mini pastries'
         },
-
         {
-            id: 'mini_pots',
-            name: 'mini pots'
+            id: 'mini_pies',
+            name: 'mini pies'
         },
-
         {
-            id: 'mini_rolls',
-            name: 'mini rolls'
+            id: 'mini_quiches',
+            name: 'mini quiches'
         },
-
         {
-            id: 'mini_skewers',
-            name: 'mini skewers'
+            id: 'mini_rice_cakes',
+            name: 'mini rice cakes'
         },
-
         {
-            id: 'mini_snack_packs',
-            name: 'mini snack packs'
+            id: 'mini_samosas',
+            name: 'mini samosas'
         },
-
+        {
+            id: 'mini_sausage_rolls',
+            name: 'mini sausage rolls'
+        },
         {
             id: 'mini_spring_rolls',
             name: 'mini spring rolls'
         },
-
+        {
+            id: 'mini_sticks',
+            name: 'mini sticks'
+        },
+        {
+            id: 'mini_sticks_or_bars',
+            name: 'mini sticks or bars'
+        },
+        {
+            id: 'mini_strudels',
+            name: 'mini strudels'
+        },
+        {
+            id: 'mini_tarts',
+            name: 'mini tarts'
+        },
+        {
+            id: 'mini_tubes',
+            name: 'mini tubes'
+        },
         {
             id: 'mini_tubs',
             name: 'mini tubs'
         },
-
         {
-            id: 'mints',
-            name: 'mints'
+            id: 'mini_snack_wraps',
+            name: 'mini/snack wraps'
         },
-
         {
-            id: 'mooncakes',
-            name: 'mooncakes'
+            id: 'mini_snacking_capsicums',
+            name: 'mini/snacking capsicums'
         },
-
         {
-            id: 'mozarella_balls',
-            name: 'mozarella balls'
+            id: 'mini_snacking_carrots',
+            name: 'mini/snacking carrots'
         },
-
         {
-            id: 'mozzarella_sticks',
-            name: 'mozzarella sticks'
+            id: 'mini_snacking_cucumbers',
+            name: 'mini/snacking cucumbers'
         },
-
         {
-            id: 'mugs',
-            name: 'mugs'
+            id: 'Moreton_bay_bugs',
+            name: 'Moreton bay bugs'
         },
-
         {
-            id: 'multipack_bags',
-            name: 'multipack bags'
+            id: 'muffins',
+            name: 'muffins'
         },
-
-        {
-            id: 'multipack_bars',
-            name: 'multipack bars'
-        },
-
-        {
-            id: 'multipack_bottles',
-            name: 'multipack bottles'
-        },
-
         {
             id: 'mushrooms',
             name: 'mushrooms'
         },
-
         {
             id: 'mussels',
             name: 'mussels'
         },
-
+        {
+            id: 'mutton_birds',
+            name: 'mutton-birds'
+        },
+        {
+            id: 'naans',
+            name: 'naans'
+        },
         {
             id: 'nectarines',
             name: 'nectarines'
         },
-
         {
-            id: 'new_potatoes',
-            name: 'new potatoes'
+            id: 'nuggets',
+            name: 'nuggets'
         },
-
-        {
-            id: 'nuggets_dippers',
-            name: 'nuggets/dippers'
-        },
-
         {
             id: 'nuts',
             name: 'nuts'
         },
-
         {
-            id: 'nuts_fruits',
-            name: 'nuts/fruits'
+            id: 'okras',
+            name: 'okras'
         },
-
         {
             id: 'olives',
             name: 'olives'
         },
-
-        {
-            id: 'onion_rings',
-            name: 'onion rings'
-        },
-
         {
             id: 'onions',
             name: 'onions'
         },
-
+        {
+            id: 'oranges',
+            name: 'oranges'
+        },
         {
             id: 'oysters',
             name: 'oysters'
         },
-
         {
             id: 'packets',
             name: 'packets'
         },
-
-        {
-            id: 'packs',
-            name: 'packs'
-        },
-
         {
             id: 'pancakes',
             name: 'pancakes'
         },
-
         {
-            id: 'panna_cottas',
-            name: 'panna cottas'
+            id: 'pappadams',
+            name: 'pappadams'
         },
-
+        {
+            id: 'parmigianas',
+            name: 'parmigianas'
+        },
+        {
+            id: 'parsnips',
+            name: 'parsnips'
+        },
+        {
+            id: 'passionfruits',
+            name: 'passionfruits'
+        },
         {
             id: 'pastries',
             name: 'pastries'
         },
-
+        {
+            id: 'patties',
+            name: 'patties'
+        },
+        {
+            id: 'patties_or_cakes',
+            name: 'patties or cakes'
+        },
+        {
+            id: 'patties_or_rissoles',
+            name: 'patties or rissoles'
+        },
+        {
+            id: 'pawpaws',
+            name: 'pawpaws'
+        },
         {
             id: 'peaches',
             name: 'peaches'
         },
-
+        {
+            id: 'pears',
+            name: 'pears'
+        },
+        {
+            id: 'peas',
+            name: 'peas'
+        },
         {
             id: 'peppers',
             name: 'peppers'
         },
-
+        {
+            id: 'periwinkles',
+            name: 'periwinkles'
+        },
+        {
+            id: 'persimmons',
+            name: 'persimmons'
+        },
         {
             id: 'pieces',
             name: 'pieces'
         },
-
         {
             id: 'pies',
             name: 'pies'
         },
-
-        {
-            id: 'pigs_in_blankets',
-            name: 'pigs in blankets'
-        },
-
         {
             id: 'pikelets',
             name: 'pikelets'
         },
-
         {
-            id: 'pilchards',
-            name: 'pilchards'
+            id: 'pipis',
+            name: 'pipis'
         },
-
         {
-            id: 'pints',
-            name: 'pints'
+            id: 'pizza_pockets',
+            name: 'pizza pockets'
         },
-
+        {
+            id: 'pizzas',
+            name: 'pizzas'
+        },
+        {
+            id: 'plantains',
+            name: 'plantains'
+        },
+        {
+            id: 'plums',
+            name: 'plums'
+        },
         {
             id: 'pods',
             name: 'pods'
         },
-
         {
-            id: 'poppadums',
-            name: 'poppadums'
+            id: 'pomegranates',
+            name: 'pomegranates'
         },
-
         {
-            id: 'portions',
-            name: 'portions'
+            id: 'pop_tarts',
+            name: 'pop tarts'
         },
-
-        {
-            id: 'potato_skins',
-            name: 'potato skins'
-        },
-
         {
             id: 'potatoes',
             name: 'potatoes'
         },
-
-        {
-            id: 'pots',
-            name: 'pots'
-        },
-
-        {
-            id: 'pots_slices',
-            name: 'pots/slices'
-        },
-
         {
             id: 'pouches',
             name: 'pouches'
         },
-
         {
             id: 'prawns',
             name: 'prawns'
         },
-
+        {
+            id: 'pre_packaged_bags',
+            name: 'pre-packaged bags'
+        },
+        {
+            id: 'pre_packaged_single_serve_bowls',
+            name: 'pre-packaged single serve bowls'
+        },
+        {
+            id: 'pre_packaged_slices',
+            name: 'pre-packaged slices'
+        },
         {
             id: 'pretzels',
             name: 'pretzels'
         },
-
         {
             id: 'profiteroles',
             name: 'profiteroles'
         },
-
         {
             id: 'prunes',
             name: 'prunes'
         },
-
+        {
+            id: 'puddings',
+            name: 'puddings'
+        },
         {
             id: 'punnets',
             name: 'punnets'
         },
-
+        {
+            id: 'quails',
+            name: 'quails'
+        },
+        {
+            id: 'quandongs',
+            name: 'quandongs'
+        },
+        {
+            id: 'quarter_melons',
+            name: 'quarter melons'
+        },
+        {
+            id: 'quinces',
+            name: 'quinces'
+        },
+        {
+            id: 'radishes',
+            name: 'radishes'
+        },
+        {
+            id: 'raisins',
+            name: 'raisins'
+        },
+        {
+            id: 'rambutans',
+            name: 'rambutans'
+        },
+        {
+            id: 'ramekins',
+            name: 'ramekins'
+        },
         {
             id: 'rashers',
             name: 'rashers'
         },
-
         {
-            id: 'regular_churros',
-            name: 'regular churros'
+            id: 'ravioli_or_tortellinis',
+            name: 'ravioli or tortellinis'
         },
-
         {
-            id: 'regular_standard_kebabs',
-            name: 'regular / standard kebabs'
+            id: 'rectangle_crackers',
+            name: 'rectangle crackers'
         },
-
+        {
+            id: 'rectangle_flatbreads',
+            name: 'rectangle flatbreads'
+        },
+        {
+            id: 'regular_balls',
+            name: 'regular balls'
+        },
+        {
+            id: 'regular_biscuits',
+            name: 'regular biscuits'
+        },
+        {
+            id: 'regular_cones',
+            name: 'regular cones'
+        },
+        {
+            id: 'regular_flatbreads',
+            name: 'regular flatbreads'
+        },
+        {
+            id: 'regular_kebabs',
+            name: 'regular kebabs'
+        },
+        {
+            id: 'regular_muffins',
+            name: 'regular muffins'
+        },
+        {
+            id: 'regular_rice_cakes',
+            name: 'regular rice cakes'
+        },
+        {
+            id: 'regular_rolls',
+            name: 'regular rolls'
+        },
+        {
+            id: 'regular_sticks',
+            name: 'regular sticks'
+        },
+        {
+            id: 'regular_takeaway_serves',
+            name: 'regular takeaway serves'
+        },
+        {
+            id: 'regular_large_pizzas',
+            name: 'regular/large pizzas'
+        },
         {
             id: 'ribs',
             name: 'ribs'
         },
-
-        {
-            id: 'rice_cakes',
-            name: 'rice cakes'
-        },
-
         {
             id: 'rings',
             name: 'rings'
         },
-
+        {
+            id: 'rock_cakes',
+            name: 'rock cakes'
+        },
         {
             id: 'rolls',
             name: 'rolls'
         },
-
+        {
+            id: 'rostis',
+            name: 'rostis'
+        },
+        {
+            id: 'rotis',
+            name: 'rotis'
+        },
+        {
+            id: 'round_crackers',
+            name: 'round crackers'
+        },
+        {
+            id: 'round_crumpets',
+            name: 'round crumpets'
+        },
+        {
+            id: 'round_slices',
+            name: 'round slices'
+        },
+        {
+            id: 'rows',
+            name: 'rows'
+        },
+        {
+            id: 'rusks',
+            name: 'rusks'
+        },
         {
             id: 'sachets',
             name: 'sachets'
         },
-
         {
-            id: 'sachets_made_up_with_milk',
-            name: 'sachets (made up with milk)'
+            id: 'samosas',
+            name: 'samosas'
         },
-
         {
-            id: 'sandwiches_made_with_two_slices_of_bread',
-            name: 'sandwiches (made with two slices of bread)'
+            id: 'sandwich_size_slices',
+            name: 'sandwich size slices'
         },
-
+        {
+            id: 'sandwich_slices',
+            name: 'sandwich slices'
+        },
+        {
+            id: 'sandwich_thins',
+            name: 'sandwich thins'
+        },
+        {
+            id: 'sandwiches',
+            name: 'sandwiches'
+        },
         {
             id: 'sausages',
             name: 'sausages'
         },
-
         {
             id: 'scallops',
             name: 'scallops'
         },
-
+        {
+            id: 'schnitzels',
+            name: 'schnitzels'
+        },
         {
             id: 'scones',
             name: 'scones'
         },
-
         {
-            id: 'scoops_of_powder',
-            name: 'scoops of powder'
+            id: 'scoops',
+            name: 'scoops'
         },
-
         {
             id: 'seeds',
             name: 'seeds'
         },
-
         {
             id: 'segments',
             name: 'segments'
         },
-
         {
-            id: 'share_bags',
-            name: 'share bags'
+            id: 'serves',
+            name: 'serves'
         },
-
+        {
+            id: 'shallots',
+            name: 'shallots'
+        },
+        {
+            id: 'shaved_slices',
+            name: 'shaved slices'
+        },
         {
             id: 'sheets',
             name: 'sheets'
         },
-
         {
-            id: 'shots',
-            name: 'shots'
+            id: 'single_patty_burgers',
+            name: 'single patty burgers'
         },
-
         {
-            id: 'shrimps',
-            name: 'shrimps'
+            id: 'single_serve_bags',
+            name: 'single serve bags'
         },
-
         {
-            id: 'single_measures',
-            name: 'single measures'
+            id: 'single_serve_boxes',
+            name: 'single serve boxes'
         },
-
+        {
+            id: 'single_serve_cups_or_sachets',
+            name: 'single serve cups or sachets'
+        },
+        {
+            id: 'single_serve_packets',
+            name: 'single serve packets'
+        },
+        {
+            id: 'single_serve_sachets',
+            name: 'single serve sachets'
+        },
+        {
+            id: 'single_serve_tubs',
+            name: 'single serve tubs'
+        },
+        {
+            id: 'six_inch_sub_rolls',
+            name: 'six inch sub rolls'
+        },
         {
             id: 'slices',
             name: 'slices'
         },
-
         {
-            id: 'slices_1_12th_of_cake',
-            name: 'slices (1/12th of cake)'
+            id: 'slices_or_onion_rings',
+            name: 'slices or onion rings'
         },
-
         {
-            id: 'slices_1_8th_of_cake',
-            name: 'slices (1/8th of cake)'
+            id: 'sliders',
+            name: 'sliders'
         },
-
         {
-            id: 'slices_1_6th_of_cake',
-            name: 'slices (1/6th of cake)'
+            id: 'small_avocadoes',
+            name: 'small avocadoes'
         },
-
         {
-            id: 'slices_1_4th_of_cake',
-            name: 'slices (1/4th of cake)'
+            id: 'small_balls',
+            name: 'small balls'
         },
-
         {
-            id: 'slices_1_8th_of_pie',
-            name: 'slices (1/8th of pie)'
+            id: 'small_berries',
+            name: 'small berries'
         },
-
-        {
-            id: 'slices_of_large_flatbread',
-            name: 'slices of large flatbread'
-        },
-
-        {
-            id: 'small_aubergines',
-            name: 'small aubergines'
-        },
-
-        {
-            id: 'small_avocados',
-            name: 'small avocados'
-        },
-
-        {
-            id: 'small_bags',
-            name: 'small bags'
-        },
-
-        {
-            id: 'small_bananas',
-            name: 'small bananas'
-        },
-
-        {
-            id: 'small_bars',
-            name: 'small bars'
-        },
-
-        {
-            id: 'small_beetroot',
-            name: 'small beetroot'
-        },
-
-        {
-            id: 'small_biscuits',
-            name: 'small biscuits'
-        },
-
         {
             id: 'small_bottles',
             name: 'small bottles'
         },
-
         {
-            id: 'small_bowls',
-            name: 'small bowls'
+            id: 'small_bunnies_or_bilbies',
+            name: 'small bunnies or bilbies'
         },
-
         {
-            id: 'small_burgers',
-            name: 'small burgers'
+            id: 'small_buns_or_scrolls',
+            name: 'small buns or scrolls'
         },
-
         {
-            id: 'small_cakes',
-            name: 'small cakes'
+            id: 'small_capsicums',
+            name: 'small capsicums'
         },
-
         {
             id: 'small_carrots',
             name: 'small carrots'
         },
-
         {
             id: 'small_cartons',
             name: 'small cartons'
         },
-
+        {
+            id: 'small_chickens',
+            name: 'small chickens'
+        },
         {
             id: 'small_chops',
             name: 'small chops'
         },
-
         {
-            id: 'small_coconut_spoons',
-            name: 'small coconut spoons'
+            id: 'small_cucumbers',
+            name: 'small cucumbers'
         },
-
         {
-            id: 'small_crepes',
-            name: 'small crepes'
+            id: 'small_cutlets',
+            name: 'small cutlets'
         },
-
         {
-            id: 'small_eggs',
-            name: 'small eggs'
+            id: 'small_dinner_rolls',
+            name: 'small dinner rolls'
         },
-
+        {
+            id: 'small_drumsticks',
+            name: 'small drumsticks'
+        },
+        {
+            id: 'small_dumplings',
+            name: 'small dumplings'
+        },
+        {
+            id: 'small_easter_eggs',
+            name: 'small easter eggs'
+        },
+        {
+            id: 'small_eggplants',
+            name: 'small eggplants'
+        },
+        {
+            id: 'small_feet',
+            name: 'small feet'
+        },
         {
             id: 'small_fillets',
             name: 'small fillets'
         },
-
+        {
+            id: 'small_fillets_or_steaks',
+            name: 'small fillets or steaks'
+        },
         {
             id: 'small_flatbreads',
             name: 'small flatbreads'
         },
-
         {
-            id: 'small_fruits',
-            name: 'small fruits'
+            id: 'small_grapefruits',
+            name: 'small grapefruits'
         },
-
         {
-            id: 'small_gherkins',
-            name: 'small gherkins'
+            id: 'small_kebabs',
+            name: 'small kebabs'
         },
-
         {
-            id: 'small_handfuls',
-            name: 'small handfuls'
+            id: 'small_leaves',
+            name: 'small leaves'
         },
-
         {
-            id: 'small_hot_dogs',
-            name: 'small hot dogs'
+            id: 'small_leeks',
+            name: 'small leeks'
         },
-
         {
-            id: 'small_individual_pavlovas',
-            name: 'small individual pavlovas'
+            id: 'small_lettuces',
+            name: 'small lettuces'
         },
-
         {
-            id: 'small_individual_tubs',
-            name: 'small individual tubs'
+            id: 'small_mangos',
+            name: 'small mangos'
         },
-
-        {
-            id: 'small_jars',
-            name: 'small jars'
-        },
-
-        {
-            id: 'small_kiwis',
-            name: 'small kiwis'
-        },
-
         {
             id: 'small_mushrooms',
             name: 'small mushrooms'
         },
-
         {
             id: 'small_naans',
             name: 'small naans'
         },
-
-        {
-            id: 'small_omelettes_1_egg',
-            name: 'small omelettes (1 egg)'
-        },
-
         {
             id: 'small_onions',
             name: 'small onions'
         },
-
         {
-            id: 'small_packets',
-            name: 'small packets'
+            id: 'small_pears',
+            name: 'small pears'
         },
-
-        {
-            id: 'small_pancakes',
-            name: 'small pancakes'
-        },
-
-        {
-            id: 'small_pastries',
-            name: 'small pastries'
-        },
-
-        {
-            id: 'small_parsnips',
-            name: 'small parsnips'
-        },
-
         {
             id: 'small_pieces',
             name: 'small pieces'
         },
-
         {
-            id: 'small_pies',
-            name: 'small pies'
+            id: 'small_potatoes',
+            name: 'small potatoes'
         },
-
-        {
-            id: 'small_plantains',
-            name: 'small plantains'
-        },
-
-        {
-            id: 'small_portions',
-            name: 'small portions'
-        },
-
-        {
-            id: 'small_pots',
-            name: 'small pots'
-        },
-
         {
             id: 'small_pouches',
             name: 'small pouches'
         },
-
         {
-            id: 'small_scones',
-            name: 'small scones'
+            id: 'small_rolls',
+            name: 'small rolls'
         },
-
+        {
+            id: 'small_rotis',
+            name: 'small rotis'
+        },
+        {
+            id: 'small_shanks',
+            name: 'small shanks'
+        },
+        {
+            id: 'small_single_serve_packets',
+            name: 'small single serve packets'
+        },
+        {
+            id: 'small_single_serve_pouches_or_tubs',
+            name: 'small single serve pouches or tubs'
+        },
+        {
+            id: 'small_single_serve_tubs',
+            name: 'small single serve tubs'
+        },
         {
             id: 'small_slices',
             name: 'small slices'
         },
-
-        {
-            id: 'small_souffles',
-            name: 'small souffles'
-        },
-
         {
             id: 'small_squares',
             name: 'small squares'
         },
-
         {
-            id: 'small_steaks',
-            name: 'small steaks'
+            id: 'small_swedes',
+            name: 'small swedes'
         },
-
         {
-            id: 'small_sticks',
-            name: 'small sticks'
+            id: 'small_sweet_potatoes',
+            name: 'small sweet potatoes'
         },
-
         {
-            id: 'small_sundaes',
-            name: 'small sundaes'
+            id: 'small_takeaway_serves',
+            name: 'small takeaway serves'
         },
-
         {
-            id: 'small_tins',
-            name: 'small tins'
+            id: 'small_thighs',
+            name: 'small thighs'
         },
-
         {
-            id: 'small_truffles',
-            name: 'small truffles'
+            id: 'small_wings',
+            name: 'small wings'
         },
-
         {
-            id: 'small_tubs',
-            name: 'small tubs'
+            id: 'small_yams',
+            name: 'small yams'
         },
-
         {
-            id: 'snack_size_bars',
-            name: 'snack size bars'
+            id: 'small_zucchinis',
+            name: 'small zucchinis'
         },
-
+        {
+            id: 'small_baby_carrots',
+            name: 'small/baby carrots'
+        },
+        {
+            id: 'small_medium_beetroots',
+            name: 'small/medium beetroots'
+        },
+        {
+            id: 'small_medium_peaches',
+            name: 'small/medium peaches'
+        },
+        {
+            id: 'small_medium_pineapples',
+            name: 'small/medium pineapples'
+        },
+        {
+            id: 'small_medium_stalks',
+            name: 'small/medium stalks'
+        },
+        {
+            id: 'small_medium_sticks',
+            name: 'small/medium sticks'
+        },
+        {
+            id: 'small_mini_bases',
+            name: 'small/mini bases'
+        },
+        {
+            id: 'small_mini_biscuits',
+            name: 'small/mini biscuits'
+        },
+        {
+            id: 'small_mini_cones',
+            name: 'small/mini cones'
+        },
+        {
+            id: 'small_mini_crackers',
+            name: 'small/mini crackers'
+        },
+        {
+            id: 'small_mini_meringues',
+            name: 'small/mini meringues'
+        },
+        {
+            id: 'small_mini_pieces',
+            name: 'small/mini pieces'
+        },
+        {
+            id: 'small_mini_pizzas',
+            name: 'small/mini pizzas'
+        },
+        {
+            id: 'small_mini_rice_cakes',
+            name: 'small/mini rice cakes'
+        },
+        {
+            id: 'small_mini_wagon_wheels',
+            name: 'small/mini wagon wheels'
+        },
+        {
+            id: 'small_snack_size_sheets',
+            name: 'small/snack size sheets'
+        },
+        {
+            id: 'smarties',
+            name: 'smarties'
+        },
+        {
+            id: 'snack_size_boxes',
+            name: 'snack size boxes'
+        },
+        {
+            id: 'snow_peas',
+            name: 'snow peas'
+        },
+        {
+            id: 'snowballs',
+            name: 'snowballs'
+        },
+        {
+            id: 'solid_bunnies_or_bilbies',
+            name: 'solid bunnies or bilbies'
+        },
+        {
+            id: 'solid_easter_eggs',
+            name: 'solid easter eggs'
+        },
+        {
+            id: 'souffles',
+            name: 'souffles'
+        },
         {
             id: 'spears',
             name: 'spears'
         },
-
         {
-            id: 'sprigs',
-            name: 'sprigs'
+            id: 'sponge_rolls',
+            name: 'sponge rolls'
         },
-
+        {
+            id: 'sprays',
+            name: 'sprays'
+        },
+        {
+            id: 'spring_onions',
+            name: 'spring onions'
+        },
+        {
+            id: 'spring_rolls',
+            name: 'spring rolls'
+        },
         {
             id: 'sprouts',
             name: 'sprouts'
         },
-
+        {
+            id: 'square_crackers',
+            name: 'square crackers'
+        },
+        {
+            id: 'square_crumpets',
+            name: 'square crumpets'
+        },
         {
             id: 'squares',
             name: 'squares'
         },
-
         {
-            id: 'standard_bags',
-            name: 'standard bags'
+            id: 'squashes',
+            name: 'squashes'
         },
-
         {
-            id: 'standard_bars',
-            name: 'standard bars'
+            id: 'stalks',
+            name: 'stalks'
         },
-
         {
-            id: 'standard_boxes',
-            name: 'standard boxes'
+            id: 'star_fruit',
+            name: 'star fruit'
         },
-
-        {
-            id: 'standard_packs',
-            name: 'standard packs'
-        },
-
-        {
-            id: 'standard_size_bottles',
-            name: 'standard size bottles'
-        },
-
-        {
-            id: 'standard_size_sticks',
-            name: 'standard size sticks'
-        },
-
         {
             id: 'steaks',
             name: 'steaks'
         },
-
         {
             id: 'sticks',
             name: 'sticks'
         },
-
+        {
+            id: 'sticks_or_bars',
+            name: 'sticks or bars'
+        },
+        {
+            id: 'Storms',
+            name: 'Storms'
+        },
         {
             id: 'straws',
             name: 'straws'
         },
-
         {
-            id: 'stuffed_peppers_half_a_pepper',
-            name: 'stuffed peppers (half a pepper)'
+            id: 'strips',
+            name: 'strips'
         },
-
         {
-            id: 'sweets',
-            name: 'sweets'
+            id: 'sugar_snap_peas',
+            name: 'sugar snap peas'
         },
-
+        {
+            id: 'sultanas',
+            name: 'sultanas'
+        },
+        {
+            id: 'sundaes',
+            name: 'sundaes'
+        },
+        {
+            id: 'sunny_boys',
+            name: 'sunny boys'
+        },
+        {
+            id: 'supermarket_tubs',
+            name: 'supermarket tubs'
+        },
         {
             id: 'tablespoons',
             name: 'tablespoons'
         },
-
         {
             id: 'tablets',
             name: 'tablets'
         },
-
         {
-            id: 'tablets_capsules',
-            name: 'tablets/capsules'
+            id: 'taco_shells',
+            name: 'taco shells'
         },
-
         {
-            id: 'takeaway_portions',
-            name: 'takeaway portions'
+            id: 'tacos',
+            name: 'tacos'
         },
-
         {
-            id: 'tarts',
-            name: 'tarts'
+            id: 'tails',
+            name: 'tails'
         },
-
+        {
+            id: 'takeaway_serves',
+            name: 'takeaway serves'
+        },
+        {
+            id: 'tamarillos',
+            name: 'tamarillos'
+        },
+        {
+            id: 'taros',
+            name: 'taros'
+        },
         {
             id: 'teaspoons',
             name: 'teaspoons'
         },
-
+        {
+            id: 'thai_eggplants',
+            name: 'thai eggplants'
+        },
+        {
+            id: 'thick_corn_cakes',
+            name: 'thick corn cakes'
+        },
+        {
+            id: 'thick_rice_cakes',
+            name: 'thick rice cakes'
+        },
         {
             id: 'thick_slices',
             name: 'thick slices'
         },
-
         {
             id: 'thighs',
             name: 'thighs'
         },
-
+        {
+            id: 'thin_corn_cakes',
+            name: 'thin corn cakes'
+        },
+        {
+            id: 'thin_rice_cakes',
+            name: 'thin rice cakes'
+        },
         {
             id: 'thin_slices',
             name: 'thin slices'
         },
-
         {
-            id: 'tins',
-            name: 'tins'
+            id: 'toasts',
+            name: 'toasts'
         },
-
         {
             id: 'tomatoes',
             name: 'tomatoes'
         },
-
         {
-            id: 'treble_measures',
-            name: 'treble measures'
+            id: 'truffles',
+            name: 'truffles'
         },
-
-        {
-            id: 'triangle_slices_half_a_piece_of_bread',
-            name: 'triangle slices (half a piece of bread)'
-        },
-
         {
             id: 'tubes',
             name: 'tubes'
         },
-
         {
             id: 'tubs',
             name: 'tubs'
         },
-
         {
-            id: 'very_thick_slices',
-            name: 'very thick slices'
+            id: 'turnips',
+            name: 'turnips'
         },
-
         {
-            id: 'vine_leaves',
-            name: 'vine leaves'
+            id: 'turnovers',
+            name: 'turnovers'
         },
-
         {
-            id: 'vol_au_vents',
-            name: 'vol-au-vents'
+            id: 'twelve_inch_sub_rolls',
+            name: 'twelve inch sub rolls'
         },
-
         {
-            id: 'wafers',
-            name: 'wafers'
+            id: 'twists_or_straps',
+            name: 'twists or straps'
         },
-
+        {
+            id: 'vegetables',
+            name: 'vegetables'
+        },
+        {
+            id: 'very_small_mushrooms',
+            name: 'very small mushrooms'
+        },
         {
             id: 'waffles',
             name: 'waffles'
         },
-
+        {
+            id: 'wagon_wheels',
+            name: 'wagon wheels'
+        },
+        {
+            id: 'wedge_slices',
+            name: 'wedge slices'
+        },
         {
             id: 'wedges',
             name: 'wedges'
         },
-
         {
-            id: 'whole_cakes',
-            name: 'whole cakes'
+            id: 'whole_chickens',
+            name: 'whole chickens'
         },
-
         {
-            id: 'whole_camemberts',
-            name: 'whole camemberts'
+            id: 'whole_ducks',
+            name: 'whole ducks'
         },
-
         {
-            id: 'whole_large_pies',
-            name: 'whole large pies'
+            id: 'whole_melons',
+            name: 'whole melons'
         },
-
         {
-            id: 'whole_large_quiches',
-            name: 'whole large quiches'
+            id: 'whole_stuffed_flatbreads',
+            name: 'whole stuffed flatbreads'
         },
-
-        {
-            id: 'whole_large_tarts',
-            name: 'whole large tarts'
-        },
-
-        {
-            id: 'whole_radishes',
-            name: 'whole radishes'
-        },
-
-        {
-            id: 'whole_rolls',
-            name: 'whole rolls'
-        },
-
-        {
-            id: 'whole_sausages',
-            name: 'whole sausages'
-        },
-
-        {
-            id: 'whole_small_quiches',
-            name: 'whole small quiches'
-        },
-
-        {
-            id: 'whole_stuffed_peppers',
-            name: 'whole stuffed peppers'
-        },
-
         {
             id: 'wings',
             name: 'wings'
         },
-
         {
-            id: 'wraps_made_with_one_whole_tortilla',
-            name: 'wraps made with one whole tortilla'
+            id: 'worms',
+            name: 'worms'
         },
-
         {
-            id: 'yams',
-            name: 'yams'
+            id: 'wraps',
+            name: 'wraps'
         },
+        {
+            id: 'yabbies',
+            name: 'yabbies'
+        }
 
     ];
 
