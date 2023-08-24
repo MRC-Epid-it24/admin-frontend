@@ -160,6 +160,21 @@ module.exports = function () {
         },
 
         {
+            id: 'cans_200ml',
+            name: 'cans 200ml'
+        },
+
+        {
+            id: 'cans_250ml',
+            name: 'cans 250ml'
+        },
+
+        {
+            id: 'cans_330ml',
+            name: 'cans 330ml'
+        },
+
+        {
             id: 'cartons',
             name: 'cartons'
         },
