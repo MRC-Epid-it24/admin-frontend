@@ -1,7 +1,5 @@
 'use strict';
 
-var _ = require('underscore');
-
 module.exports = function () {
     var l = [
         {
@@ -1964,7 +1962,7 @@ module.exports = function () {
             name: 'yams'
         },
 
-    ];
+    ].sort((a, b) => a.name.localeCompare(b.name));
 
-    return _.sortBy(l, 'name');
+    return l;
 };
